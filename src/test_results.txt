@@ -1,0 +1,21 @@
+test_fibonacci_boundaries (test_number_filter.NumberFilterTests.test_fibonacci_boundaries) ... ok
+test_fibonacci_rejects_negative (test_number_filter.NumberFilterTests.test_fibonacci_rejects_negative) ... ok
+test_fibonacci_rejects_non_integer (test_number_filter.NumberFilterTests.test_fibonacci_rejects_non_integer) ... ok
+test_fibonacci_typical (test_number_filter.NumberFilterTests.test_fibonacci_typical) ... ok
+test_filter_divisible (test_number_filter.NumberFilterTests.test_filter_divisible) ... ok
+test_filter_divisible_negative_divisor (test_number_filter.NumberFilterTests.test_filter_divisible_negative_divisor) ... ok
+test_filter_divisible_rejects_non_integer_divisor (test_number_filter.NumberFilterTests.test_filter_divisible_rejects_non_integer_divisor) ... ok
+test_filter_divisible_rejects_zero (test_number_filter.NumberFilterTests.test_filter_divisible_rejects_zero) ... ok
+test_filter_primes (test_number_filter.NumberFilterTests.test_filter_primes) ... ok
+test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries) ... ok
+test_is_prime_rejects_non_integer (test_number_filter.NumberFilterTests.test_is_prime_rejects_non_integer) ... ok
+test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) ... ok
+test_sequence_functions_reject_invalid_container (test_number_filter.NumberFilterTests.test_sequence_functions_reject_invalid_container) ... ok
+test_sequence_functions_reject_non_integer_elements (test_number_filter.NumberFilterTests.test_sequence_functions_reject_non_integer_elements) ... ok
+test_split_even_odd (test_number_filter.NumberFilterTests.test_split_even_odd) ... ok
+test_split_even_odd_empty (test_number_filter.NumberFilterTests.test_split_even_odd_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK

@@ -1,0 +1,53 @@
+test_fibonacci_boundaries (test_number_filter.NumberFilterTests.test_fibonacci_boundaries) ... ok
+test_fibonacci_rejects_negative (test_number_filter.NumberFilterTests.test_fibonacci_rejects_negative) ... ok
+test_fibonacci_rejects_non_integer (test_number_filter.NumberFilterTests.test_fibonacci_rejects_non_integer) ... ok
+test_fibonacci_typical (test_number_filter.NumberFilterTests.test_fibonacci_typical) ... ok
+test_filter_divisible (test_number_filter.NumberFilterTests.test_filter_divisible) ... ok
+test_filter_divisible_negative_divisor (test_number_filter.NumberFilterTests.test_filter_divisible_negative_divisor) ... ok
+test_filter_divisible_rejects_non_integer_divisor (test_number_filter.NumberFilterTests.test_filter_divisible_rejects_non_integer_divisor) ... ok
+test_filter_divisible_rejects_zero (test_number_filter.NumberFilterTests.test_filter_divisible_rejects_zero) ... ok
+test_filter_primes (test_number_filter.NumberFilterTests.test_filter_primes) ... FAIL
+test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries) ... 
+  test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries) (number=1) ... FAIL
+test_is_prime_rejects_non_integer (test_number_filter.NumberFilterTests.test_is_prime_rejects_non_integer) ... ok
+test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) ... ok
+test_sequence_functions_reject_invalid_container (test_number_filter.NumberFilterTests.test_sequence_functions_reject_invalid_container) ... ok
+test_sequence_functions_reject_non_integer_elements (test_number_filter.NumberFilterTests.test_sequence_functions_reject_non_integer_elements) ... ok
+test_split_even_odd (test_number_filter.NumberFilterTests.test_split_even_odd) ... ok
+test_split_even_odd_empty (test_number_filter.NumberFilterTests.test_split_even_odd_empty) ... ok
+
+======================================================================
+FAIL: test_filter_primes (test_number_filter.NumberFilterTests.test_filter_primes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/number-filter-pr2/test_number_filter.py", line 28, in test_filter_primes
+    self.assertEqual(nf.filter_primes([1, 2, 3, 4, 5, 9, 11]), [2, 3, 5, 11])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [1, 2, 3, 5, 11] != [2, 3, 5, 11]
+
+First differing element 0:
+1
+2
+
+First list contains 1 additional elements.
+First extra element 4:
+11
+
+- [1, 2, 3, 5, 11]
+?  ---
+
++ [2, 3, 5, 11]
+
+======================================================================
+FAIL: test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries) (number=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/number-filter-pr2/test_number_filter.py", line 19, in test_is_prime_boundaries
+    self.assertFalse(nf.is_prime(number))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.002s
+
+FAILED (failures=2)

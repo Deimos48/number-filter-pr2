@@ -1,0 +1,5 @@
+Mutants: 15
+Killed: 15
+Survived: 0
+Invalid: 0
+Mutation score: 100.00%

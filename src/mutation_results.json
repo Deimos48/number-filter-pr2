@@ -1,0 +1,205 @@
+{
+  "total": 15,
+  "killed": 15,
+  "survived": 0,
+  "invalid": 0,
+  "mutation_score": 100.0,
+  "mutants": [
+    {
+      "id": 1,
+      "line": 5,
+      "mutation": "IsNot -> Is",
+      "status": "killed",
+      "detecting_tests": [
+        "test_fibonacci_rejects_non_integer (test_number_filter.NumberFilterTests.test_fibonacci_rejects_non_integer) (value=True)",
+        "test_fibonacci_rejects_non_integer (test_number_filter.NumberFilterTests.test_fibonacci_rejects_non_integer) (value=5.0)",
+        "test_is_prime_rejects_non_integer (test_number_filter.NumberFilterTests.test_is_prime_rejects_non_integer) (value=True)",
+        "test_is_prime_rejects_non_integer (test_number_filter.NumberFilterTests.test_is_prime_rejects_non_integer) (value=False)",
+        "test_is_prime_rejects_non_integer (test_number_filter.NumberFilterTests.test_is_prime_rejects_non_integer) (value=2.0)",
+        "test_fibonacci_boundaries (test_number_filter.NumberFilterTests.test_fibonacci_boundaries)",
+        "test_fibonacci_rejects_negative (test_number_filter.NumberFilterTests.test_fibonacci_rejects_negative) (limit=-1)",
+        "test_fibonacci_rejects_negative (test_number_filter.NumberFilterTests.test_fibonacci_rejects_negative) (limit=-10)",
+        "test_fibonacci_typical (test_number_filter.NumberFilterTests.test_fibonacci_typical)",
+        "test_filter_divisible (test_number_filter.NumberFilterTests.test_filter_divisible)",
+        "test_filter_divisible_negative_divisor (test_number_filter.NumberFilterTests.test_filter_divisible_negative_divisor)",
+        "test_filter_divisible_rejects_zero (test_number_filter.NumberFilterTests.test_filter_divisible_rejects_zero)",
+        "test_filter_primes (test_number_filter.NumberFilterTests.test_filter_primes)",
+        "test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries) (number=-10)",
+        "test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries) (number=-1)",
+        "test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries) (number=0)",
+        "test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries) (number=1)",
+        "test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=2)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=3)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=5)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=7)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=11)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=97)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=4)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=6)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=8)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=9)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=10)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=25)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=100)",
+        "test_split_even_odd (test_number_filter.NumberFilterTests.test_split_even_odd)"
+      ]
+    },
+    {
+      "id": 2,
+      "line": 10,
+      "mutation": "remove not",
+      "status": "killed",
+      "detecting_tests": [
+        "test_sequence_functions_reject_invalid_container (test_number_filter.NumberFilterTests.test_sequence_functions_reject_invalid_container) (function='split_even_odd')",
+        "test_filter_divisible (test_number_filter.NumberFilterTests.test_filter_divisible)",
+        "test_filter_divisible_negative_divisor (test_number_filter.NumberFilterTests.test_filter_divisible_negative_divisor)",
+        "test_filter_divisible_rejects_zero (test_number_filter.NumberFilterTests.test_filter_divisible_rejects_zero)",
+        "test_filter_primes (test_number_filter.NumberFilterTests.test_filter_primes)",
+        "test_split_even_odd (test_number_filter.NumberFilterTests.test_split_even_odd)",
+        "test_split_even_odd_empty (test_number_filter.NumberFilterTests.test_split_even_odd_empty)"
+      ]
+    },
+    {
+      "id": 3,
+      "line": 19,
+      "mutation": "Lt -> LtE",
+      "status": "killed",
+      "detecting_tests": [
+        "test_filter_primes (test_number_filter.NumberFilterTests.test_filter_primes)",
+        "test_is_prime_boundaries (test_number_filter.NumberFilterTests.test_is_prime_boundaries)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=2)"
+      ]
+    },
+    {
+      "id": 4,
+      "line": 22,
+      "mutation": "LtE -> Lt",
+      "status": "killed",
+      "detecting_tests": [
+        "test_filter_primes (test_number_filter.NumberFilterTests.test_filter_primes)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=4)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=9)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=25)"
+      ]
+    },
+    {
+      "id": 5,
+      "line": 46,
+      "mutation": "Lt -> LtE",
+      "status": "killed",
+      "detecting_tests": [
+        "test_fibonacci_boundaries (test_number_filter.NumberFilterTests.test_fibonacci_boundaries)"
+      ]
+    },
+    {
+      "id": 6,
+      "line": 50,
+      "mutation": "LtE -> Lt",
+      "status": "killed",
+      "detecting_tests": [
+        "test_fibonacci_boundaries (test_number_filter.NumberFilterTests.test_fibonacci_boundaries)",
+        "test_fibonacci_typical (test_number_filter.NumberFilterTests.test_fibonacci_typical)"
+      ]
+    },
+    {
+      "id": 7,
+      "line": 60,
+      "mutation": "Eq -> NotEq",
+      "status": "killed",
+      "detecting_tests": [
+        "test_filter_divisible (test_number_filter.NumberFilterTests.test_filter_divisible)",
+        "test_filter_divisible_negative_divisor (test_number_filter.NumberFilterTests.test_filter_divisible_negative_divisor)",
+        "test_filter_divisible_rejects_zero (test_number_filter.NumberFilterTests.test_filter_divisible_rejects_zero)"
+      ]
+    },
+    {
+      "id": 8,
+      "line": 23,
+      "mutation": "Eq -> NotEq",
+      "status": "killed",
+      "detecting_tests": [
+        "test_filter_primes (test_number_filter.NumberFilterTests.test_filter_primes)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=5)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=7)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=11)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=97)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=4)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=6)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=8)"
+      ]
+    },
+    {
+      "id": 9,
+      "line": 23,
+      "mutation": "% -> //",
+      "status": "killed",
+      "detecting_tests": [
+        "test_filter_primes (test_number_filter.NumberFilterTests.test_filter_primes)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=4)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=6)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=8)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=9)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=10)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=25)",
+        "test_is_prime_typical_values (test_number_filter.NumberFilterTests.test_is_prime_typical_values) (number=100)"
+      ]
+    },
+    {
+      "id": 10,
+      "line": 38,
+      "mutation": "Eq -> NotEq",
+      "status": "killed",
+      "detecting_tests": [
+        "test_split_even_odd (test_number_filter.NumberFilterTests.test_split_even_odd)"
+      ]
+    },
+    {
+      "id": 11,
+      "line": 39,
+      "mutation": "NotEq -> Eq",
+      "status": "killed",
+      "detecting_tests": [
+        "test_split_even_odd (test_number_filter.NumberFilterTests.test_split_even_odd)"
+      ]
+    },
+    {
+      "id": 12,
+      "line": 62,
+      "mutation": "Eq -> NotEq",
+      "status": "killed",
+      "detecting_tests": [
+        "test_filter_divisible (test_number_filter.NumberFilterTests.test_filter_divisible)",
+        "test_filter_divisible_negative_divisor (test_number_filter.NumberFilterTests.test_filter_divisible_negative_divisor)"
+      ]
+    },
+    {
+      "id": 13,
+      "line": 38,
+      "mutation": "% -> //",
+      "status": "killed",
+      "detecting_tests": [
+        "test_split_even_odd (test_number_filter.NumberFilterTests.test_split_even_odd)"
+      ]
+    },
+    {
+      "id": 14,
+      "line": 39,
+      "mutation": "% -> //",
+      "status": "killed",
+      "detecting_tests": [
+        "test_split_even_odd (test_number_filter.NumberFilterTests.test_split_even_odd)"
+      ]
+    },
+    {
+      "id": 15,
+      "line": 62,
+      "mutation": "% -> //",
+      "status": "killed",
+      "detecting_tests": [
+        "test_filter_divisible (test_number_filter.NumberFilterTests.test_filter_divisible)",
+        "test_filter_divisible_negative_divisor (test_number_filter.NumberFilterTests.test_filter_divisible_negative_divisor)"
+      ]
+    }
+  ]
+}
